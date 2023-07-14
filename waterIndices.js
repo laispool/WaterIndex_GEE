@@ -53,9 +53,5 @@ function indices (image) {
    S: image.select('B11'), 
    N: image.select('B8'),
    }).rename('awei2');
-  var singleBandVis = {'min': -1,'max': 1};
-  var mNDWIVis = {'max': -1,'min': 1};
-  var aweiVis = {'max': 150,'min': 10};
-  var awei2Vis = {'min': 550}; //'max': 150
   
   return image.addBands([ndwi,mndwi,awei,awei2])}
